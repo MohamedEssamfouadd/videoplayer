@@ -32,7 +32,7 @@ const[img,setimg]=useState(saveImg)
         reader.addEventListener("load",()=>{
             const url=reader.result
             setimg(url)
-            if (img !==undefined) {
+            if (img !==undefined || img!==null || img !== "") {
                  setname(prompt("what's your Name"))
                  setage(prompt("your Age")) 
             }
